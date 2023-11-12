@@ -1,0 +1,542 @@
+:root {
+    --tab-background: #3a3b42;
+    --tab-background-box: rgb(93, 93, 102);
+    --hover: rgb(91, 94, 109);
+}
+
+body {
+    position: flex;
+    justify-content: center;
+    /*horizontal alignment*/
+    align-items: center;
+    /*vertical alignment*/
+    background-color: white;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    position: relative;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.googleLogo {
+    position: relative;
+    height: 220px;
+    width: auto;
+    top: -130px;
+}
+
+.text-box-container {
+    position: absolute;
+    top: 50vh;
+}
+
+.text {
+    padding-left: 40px;
+    border-radius: 50px;
+    width: 550px;
+    height: 40px;
+    border: 0;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.text-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    position: absolute;
+}
+
+#mag {
+    background-image: url(https://cdn.icon-icons.com/icons2/933/PNG/512/searching-magnifying-glass_icon-icons.com_72568.png);
+    top: 11px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+
+}
+
+#mic {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-1024.png);
+    top: 8px;
+    left: 480px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#img {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/640px-Google_Lens_Icon.svg.png);
+    top: 12px;
+    left: 520px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icon-tray {
+    position: absolute;
+    top: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    height: 20px;
+}
+
+.shortcut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.shortcut-circle {
+    position: relative;
+    background-color: rgb(56, 56, 114);
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.box {
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(116, 116, 116);
+    transform: translateX(-50%);
+    height: 120px;
+    width: 113px;
+    top: 5px;
+    left: 55px;
+    border-radius: 5px;
+}
+
+.shortcut.amazon:hover .box.amazonBoxCont,
+.shortcut.autotrader:hover .box.autotraderBoxCont,
+.shortcut.ebay:hover .box.ebayBoxCont,
+.shortcut.facebook:hover .box.facebookBoxCont,
+.shortcut.google:hover .box.googleBoxCont,
+.shortcut.github:hover .box.githubBoxCont,
+.shortcut.instagram:hover .box.instagramBoxCont,
+.shortcut.paypal:hover .box.paypalBoxCont,
+.shortcut.youtube:hover .box.youtubeBoxCont,
+.shortcut.shortcutAdd:hover .box.shortcutAddBoxCont {
+    opacity: 40%;
+}
+
+p {
+    position: relative;
+    top: 17px;
+}
+
+#amazon-logo,
+#autotrader-logo,
+#ebay-logo,
+#instagram-logo,
+#youtube-logo {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    top: 15px;
+    left: 15px;
+}
+
+#facebook-logo,
+#google-logo,
+#github-logo,
+#paypal-logo {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    top: 15px;
+    left: 15px;
+}
+
+.plus-line {
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 20px;
+    top: 24px;
+    left: 15px;
+    border-radius: 10px;
+}
+
+#liney {
+    transform: rotate(90deg);
+    left: 15px;
+}
+
+/* top right nav bar */
+.top-right-nav {
+    position: absolute;
+    display: inline;
+    height: 500px;
+    width: 660px;
+    top: 0px;
+    right: -280px;
+}
+
+.nav-selectors {
+    position: relative;
+    top: 0px;
+    right: -50px;
+}
+
+#gmail,
+#images {
+    position: relative;
+    display: inline;
+    top: 13px;
+    cursor: pointer;
+}
+
+#gmail {
+    left: 85px;
+}
+
+#images {
+    left: 100px;
+}
+
+#gmail:hover,
+#images:hover {
+    text-decoration: underline;
+}
+
+/* /////////////////////////////////////////////////// */
+/* app window */
+
+.app-button-cont {
+    position: relative;
+    display: inline;
+    height: 30px;
+    width: 30px;
+    left: 197px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.app-button-cont .app-button {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    border-radius: 30px;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.app-button-cont:hover .app-button {
+    opacity: 100%;
+}
+
+.fa-bars {
+    position: relative;
+    top: -8px;
+    left: -21px;
+}
+
+.app-window {
+    position: relative;
+    max-width: 300px;
+    background-color: var(--tab-background);
+    height: 460px;
+    width: 320px;
+    top: -50px;
+    left: 13px;
+    border-radius: 30px;
+    border: 8px var(--tab-background-box) solid;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    margin: 5px;
+}
+
+.app-window::-webkit-scrollbar {
+    display: none;
+}
+
+.app-window.hide {
+    opacity: 0;
+}
+
+.app-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+    width: 300px;
+    left: -3px;
+}
+
+.app-seperating-line {
+    position: relative;
+    background-color: var(--tab-background-box);
+    height: 2px;
+    width: 100%;
+    top: 10px;
+
+}
+
+/* apps */
+.apps {
+    position: relative;
+    text-align: center;
+    height: 85px;
+    width: 85px;
+    margin: 5px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.apps:hover {
+    background-color: var(--tab-background-box);
+}
+
+.app-logo {
+    position: absolute;
+    height: auto;
+    width: 35px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#account-app {
+    color: white;
+    font-size: 30px;
+    background-color: rgb(178, 172, 136);
+    height: 35px;
+    width: 35px;
+    border-radius: 35px;
+}
+
+h6 {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    height: 20px;
+    width: 100%;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* ////////////////////////////////////////////////////////// */
+/* email account */
+
+.acc-btn-cont {
+    position: relative;
+    background-color: rgb(178, 172, 136);
+    height: 35px;
+    width: 35px;
+    top: -60px;
+    left: 245px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#account-initial {
+    position: relative;
+    top: 9px;
+    left: 12px;
+    color: white;
+}
+
+.account-window {
+    position: absolute;
+    background-color: var(--tab-background-box);
+    height: 370px;
+    width: 360px;
+    top: 50px;
+    left: -25px;
+    border-radius: 30px;
+}
+
+.email-account-container {
+    position: absolute;
+    background-color: var(--tab-background);
+    height: 345px;
+    width: 340px;
+    top: 10px;
+    left: 10px;
+    border-radius: 25px;
+}
+
+.account-window.hide {
+    opacity: 0;
+}
+
+.email-1 {
+    height: 150px;
+    width: 340px;
+}
+
+.email-circle {
+    position: relative;
+    background-color: rgb(178, 172, 136);
+    height: 80px;
+    width: 80px;
+    border-radius: 60px;
+    border: 0;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.camera-circle {
+    position: relative;
+    background-color: var(--tab-background);
+    border: 2px white;
+    height: 30px;
+    width: 30px;
+    top: 50px;
+    left: -5px;
+    border-radius: 30px;
+    border: 2px grey solid;
+    cursor: pointer;
+}
+
+#email-name {
+    top: -60px;
+    left: 120px;
+    color: white;
+    font-weight: bold;
+}
+
+#email-add {
+    top: -70px;
+    left: 120px;
+    color: white;
+    font-size: 12px;
+}
+
+.manage-acc {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 35px;
+    width: 220px;
+    top: -50px;
+    left: 100px;
+    border-radius: 10px;
+    border: 2px var(--tab-background) solid;
+    color: white;
+    cursor: pointer;
+}
+
+.manage-acc:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+
+.email-seperator-line {
+    position: relative;
+    background-color: var(--tab-background-box);
+    height: 2px;
+    width: 340px;
+}
+
+/* second email */
+.email-2 {
+    position: absolute;
+    height: 70px;
+    width: 340px;
+    top: 150px;
+    cursor: pointer;
+}
+
+.email-2:hover {
+    background-color: var(--hover);
+}
+
+.email-circle-2 {
+    position: relative;
+    background-color: pink;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 0;
+    top: 15px;
+    left: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+#email-name-2 {
+    top: -40px;
+    left: 120px;
+    color: white;
+    font-weight: bold;
+}
+
+#email-add-2 {
+    top: -50px;
+    left: 120px;
+    color: white;
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 15px;
+    color: white;
+}
+
+/* add account */
+
+.add-acc-cont {
+    position: relative;
+    top: 35px;
+    height: 55px;
+}
+
+
+.add-acc-cont:hover {
+    background-color: var(--hover);
+    border-radius: 0 0 25px 25px;
+}
+
+.acc-add {
+    position: relative;
+    top: 17px;
+    left: 120px;
+}
+
+.sign-out-cont {
+    position: relative;
+    top: 290px;
+
+}
+
+.sign-out-cont:hover {
+    background-color: var(--hover);
+}
+
+.sign-out {
+    position: relative;
+    left: 130px;
+}

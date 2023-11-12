@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Clone</title>
+</head>
+<div class="container">
+    <div class="center-content">
+        <div class="heading">
+            <img class="googleLogo"
+                src="https://www.google.com/logos/doodles/2017/celebrating-50-years-of-kids-coding-5745168905928704-2xa.gif"
+                alt="Coding celebrating-50-years-of-kids-coding">
+        </div>
+        <div class="text-box-container">
+            <input type="text" class="text" placeholder="Search Google or type a URL">
+            <i class="text-icon" id="mag"></i>
+            <i class="text-icon" id="mic"></i>
+            <i class="text-icon" id="img"></i>
+        </div>
+        <div class="icon-tray">
+            <div class="shortcut amazon" id="amazon">
+                <div class="box amazonBoxCont" id="amazon-box"></div>
+                <div class="shortcut-circle" id="amazon-circle">
+                    <img src="https://st3.depositphotos.com/1001860/16375/i/600/depositphotos_163757632-stock-photo-amazon-logo-on-a-white.jpg"
+                        id="amazon-logo" alt="amazon logo">
+                </div>
+                <p>Amazon.co.uk</p>
+            </div>
+            <div class="shortcut autotrader" id="autotrader">
+                <div class="box autotraderBoxCont" id="autotrader-box"></div>
+                <div class="shortcut-circle" id="autotrader-circle">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAqFBMVEX///8xPFP/RDb/Lxv/7Ovy8/QQIkH/OCgjMEr/rKj/rqqanqadoan/PzCanab/Oir/KhP/NCEoNU3/x8QDHT3/a2IVJkP/pqL/nJf/hH3/2Nbt7u+oq7L/0c//+vr/sq7/TkLT1NjGyM04Qlh2e4hla3r/8fD/ubb/aF//cmr/gHn/eXH/lpD/Vkv/4d//HgAAADAAEDeNkZtIUWNUW2zh4uS6vcJqcH4l1lXmAAACgklEQVR4nO3aXVPaUBRG4SSgHEWQhBAqopbW2g9bbdHa///PWpQZR246nTPv3rvOem65eifJSgIUBQAAAAAAAAAAAAAAAAAAAABg42ox/Xhx+A8OMs1vDNct5rO6V9cDUxOzeWcnvXowqqwdvzHad1j17NdtTPom+w7qgcu8qhp9stg3HXntq6p6qt93/rnntq+qBvqBZ7XP9ffEoDPzieM+i8588TxDLToz80vMI3lnvAfKO3PtPVDdma+180B1Z6a+Fa3knem7D1R35pvnjf6JtjNz94tQ3Jkr/3NU3Jlr/3NU25lFgEOo7czM/xBqO3MT4BBqO3MS4BBKO3Me4BCOZsKBxYX3E3el7szbACeptDML3/f6R3QmC52xQGey0BkLdCYLnbFAZ7LQGQN0Jg+dMUBnstAZC6+/M8fKgXTGAp3JMr/tubuVdqYfgXIgAAAAAABAcHsRKAeuvu+7+7FWLrxsSnftqXDgXus9ryybD8KBxTJ57yvL7p1y4XvveX80yoGrznteWaahciGdMUBn8kToTFIODNGZsXIhnTFAZ/JE6Mzrf56hMznojAU6kyVEZ3hvykFnLNCZLCE6w/NMDjpjoVspFwboTHOnHBihM9pbRYDONPfKgRE60/5ULgzQmST9TTRCZ0rpwACd0Z6jATrTLaUD/TuTLqUD/TuTpDeKwr8z2oeZwr8zST3QuzNJ+kax4dyZfe2dfsO1M037IB/o2pnuXvlWv+XYmSS+z2+5dSa1+itww6kzTZeG0r+QPnPoTJO69pdBYLaaZKvr2ru19OuKHafr8bPhjvGO3Y+PXn589HfLh5X2LQkAAAAAAAAAAAAAAAAAAAAA/h+/AVAAhFkVmfDZAAAAAElFTkSuQmCC"
+                        id="autotrader-logo" alt="autotrader logo">
+                </div>
+                <p>Autotrader</p>
+            </div>
+            <div class="shortcut ebay" id="ebay">
+                <div class="box ebayBoxCont" id="ebay-box"></div>
+                <div class="shortcut-circle" id="ebay-circle">
+                    <img src="https://thumbs.dreamstime.com/b/logo-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-paper-texture-glossy-emblem-wallpaper-210442587.jpg"
+                        id="ebay-logo" alt="ebay logo">
+                </div>
+                <p>eBay</p>
+            </div>
+            <div class="shortcut facebook" id="facebook">
+                <div class="box facebookBoxCont" id="facebook"></div>
+                <div class="shortcut-circle" id="facebook-circle">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUYd/L///8AcvIAbPEXePIAcPKkw/nx9/4AbvEAa/GSt/iMs/cKdPIJc/Lt9P5ZlvXC1vtfmfVtofbZ5vyWuvhQkfSpxvm60fqvyfnd6f3T4vzn8P32+v+bvfhJjfRlnPUnfvN9qvbK3Ps6hvMugfN5qPYAZ/Hi7f20zfqEr/f2EiWvAAAKz0lEQVR4nN3d6WKqvBYGYCBGQYNjHepQqcOxvf8bPGAdUAgkWXkJ316/9v7RwlMyj57fTAwvs8N4+bPK4mc5Pswuw20zT/bAv/8y7v5Ojh3OGAv5M8L0/7xznPx2x5/gN8AJh4fd9JS5AiG88hAiyKyn/e4whL0HRvi5miapLZbR3qBx6kymC8zXtC8c/kw9xmMlWz5izrzpamP9fSwLPz+OJrqc8tif2X0lm8LPQcK4WsKUh+AsGdhEWhMOdyc67xYBO+2sJVdLwvHEGu8a6Zccje28mg3hdtdhNnk3JPN2PQtvRxduvjm3zvsLzs8X58LPfRSAfFkE0Z5a6tCEnxNmXjWoRcxGNCNFuNlHaF8WIppQ0qq5cPsN/373iNnZvMwxFnY5Mv+9RxDuGhYeElT5KQueHBoUbqeR/fqvLkS0N0qqJsJVown0GXG4akTYGzEnvizYXL+nrC1chk2VoGURsx+0cOruA/4F20OFs46bHJiPwFvjhF1AF0I/RKRVN+oI965T6D3YBCIcnpqu5OURJOpDAMrCddCGFHoPwZVbOKrCn8g16i0i1dpfUdhvGzAlDmwKz20pY/LBpvaEk/aUMfngI1vCeTuBKfHLjvCrrcC01jjaELYYqESsFbYaqEKsE7Y2D94jqMuLNcKWlqL5qCtRq4Xn9gNTYnW9WCnst7GiLwarbN1UCVvXFpVFtDATrv8rwJRY0dOQC4fuByzUg8v7i3LhqU39wboQib5w31QxKoLbGqn7sqkgli4xkkcgHdiQCbtNFKMxZywZfX+slofDbDZbHw7jn+7ud5otE4uy1VSKS46yYLLhKYlwhgdy5u27a+nyveFsvBjsj4Kpju9FkkFGibADzoQxS/pqw56b9V71Xcr/WuXCKbYc5fysMarbV3wZSVYsFS6haZSHH1rTZAPVPzcrHZwqE/ZCoC8O+zo8HaHHymamyoQj4OwSG2kv51IXirmacIVLoyLUnhzTEXqspIFaFG5xVT0/mqzH0xB6YTGHF4W4cjTUnfrTF8bF8rQgPMB6FOzXCKgl9KLCisaCMEHV9dX9VFvCYhP8XdhF5cLQ8AtqCj3+US2EFTPcLA/qCwuFzZvwG1TMCIXBaUvC4G1g6lW4QVWFIWHZtqbQY6/7Nl6Fe1BrRn8VDEEYvw6gvgg/QTVFaWsKJvSilyW3L8IJ6hOSthZoC1//oHnhJygXctOa0FDosfxHzAtRuZDTdhrqC0U+J+aEG1Au5LodQrLQi3ILw3NCVF1Y0t5HC+NzmRDVnMk/rSmhFz57+0/hDiRkeksJ7QhzrdOnsGMfdw35eDtQ6ImicIyqKojljKEwXBaEE1C/kJF3S5p9w0etfxcOUW3uDhVoJny2o+5CVDkTqy0+qwrVMe/XeJQ1dyFqtpBrbZEYLvv7Y+KJWOTD7Mn3Eu4mRDVJ3ztrlbH6Ut/Dr/Dk9YtwABu9UPYtAqs7ib3g90WIGmFTHr3ofVlPRZ28EDYhqlrQXGL7/ZpbMv0TfsASqdrWiKG13Jd/9iAnPKKGgbnaAA3k+eL0FMKqe48pbRrYYSYs2eUh/IFNNylVFqh+G188hFPYlGjprGzhE6LaU/uHEPOALEKVIRrY6qv4LoQ1aNQq/AtuPm92E65ws76BghD3eN69CXHZUEmIGgG7ZcRMmKCeoCac49Zfdf6EuNpQTQhc5pl1g1PhAbhASEWIGgJLIxxfhajqKAvHwmwYzIMWNK6FYnIVIpc7OxZmQxmpELkQ0bUw2qbCy78sTFs1nj9GrrV0LeTLVAhbI5SFc+EuFf5CTyNzLAzOqRA1YfH3BMdCMU+FsDGaLJwLT6kQ+QDnQk+kQujuH+dCvvWQPYsWCNnGg1b4LRB+etgdTs6F4dpD9g5bIORjb/yPlzRLb/mPC3883Ih+Fu6FKw84WOq1QbiwIBRcHpGCMKj4eU49hZl36UIxWXTloSCs+Ok0FrRPbENY2MJhOWjvZ0VIXrhWGcRpozQfkstSsJA4yJKWpeT6ECwkjlen9SG5TQMWnmnj1WmbhtwuBQu/aEMQabuU3LcAC4ljLGnfgtw/xAqHxCnwtH9I7uNjhWvi66V9fPJiFqyQWl3zLX2sDSs0WwL9DGFhvBQrJI5XX8dLqWPeWGFCe7nrmDd13gIqpJYS8dnC3BNUSK3LrnNP1PlDqJD8ctn8IXVVG1RIXSdynQOmzuNDhcR29988PnUtBlRIbHdny7488vZfqJD4CW/raah9TKCwR2x339ZEEXuISCG13X1b10bsXSCF1Hb3bW2in7RWSN2OdVtfSly6hxQS28yPNcIL0l8KKaRWZPd13rRWDVBIbXc/1urT9lsAhdR293Xmi75nBigktrvF5CEkFcpAIbFjl9v3RDoeCig80zrnub1rpLGaYLDtyUPBIf3ZLa3dfTuc7k/YpySHgEkj+p+CMIxkP06rK4L8HlLYsiGX8/gv+4D9BPQUl8KXvdzkgVdZOBS+7cdHJVOHwrczFVDbShwK387FQG1+cid8VNN3IehMSHdCdj/Q7HHG0AiSTJ0Ji2cMgc6JciYsOScKs2XdmTB+uh7/gpQ1roS57sBT2PuXhKzszD1qX6U0HAnzx+LkhIizDRwJo9yBI+DzS90IZeeXIhqnboQvh1G+nCNsv9Z3IpSfI+zPrOdEJ8LXW4Nez/O2fhi0C6GoOM/b/r5uF8LKM9mt14kOhNXn6lu/JsiBMHw7mur9fgvLrdPmhYUBavAdJc0LCyfCgu+ZaVzI6u+Zsdt2a1oYF6/OLQqt9qKaFpacgAe+s6thYViyk6zs3rW5vXTarFCU3WBdJrS4Rb9ZYVR2U0jp/Yc/1oiNCsvulZPdYbm31XhrUlhSjsqF1u4hbVIodO4htXZjdYNC2c3VsvuAd3ayYnPCULZZV3qn88RKxd+YMCjPhFVCO03wpoQm93L7GxsfsSkhv0h/vVxopZfRkLB4c6WS0F/Ric0IWdXBBlVCf0AuUBsRVl+PWSn0p9S82ISw5nrMaqE/IhIbEPKaqwdrhP4XrYWKFwZ1N2jUCf0jiQgXxrVXhNQKaUS0MD7VHmtfLyQRwcLgWH9uv4LQ/zIvbrBCrnKLjYqQUKJChXWlqIbQn5pW/Uih4lXtakJ/YNiAAwpVr2pXFPoLMyJOGKkcsqUj9A9GN2qhhIJX9CYMhf4mMag1QMIgkfcHzYW+P9EvbzDCUDpkQRT6O+3MCBFGWifEaQn9taeZUgHCWCjdkmUo9LeaKdW+kI0078DWFGZzbzplqm2hiErnJqwK/eFc4zNaFoZf+vfQ6wvT2j9UnmC0KowrR5xkYSL0e5NIManaFLKRyiVuhTAS+v44Uetu2BPyjnIr5jUMhb7/EapUHLaEATPeqWos9HtTVp8d7QgFmxol0GuYC33/Up8dbQhFNNK4VLgQFKHvz+Y135EuFGy+rv8dFUETpsZJVGWkCuNoRPPRhWlaPYfycpUm5GxKSZ9/QRemrZwPEUoyJEEowrhvXr48w4YwjeWclX5IYyFn82X9j6qEJaHvbz4SVqwhzYQBS/r6DVBJWBOmsf7tsLfRHH2hCFjnl1q65MOmMI314MR4bCwUnCUDmzzfujCNzWIfP5QawpizYLJQH2FSDfvCLGbdfYeFXAgloRA8ZJ19dwZ5F4wwi824P0mUTv7oTPpjawVLIXDCa6iMqWiOu+gGWNiC+D9eSquO5uzvagAAAABJRU5ErkJggg=="
+                        id="facebook-logo" alt="facebook logo">
+                </div>
+                <p>Facebook</p>
+            </div>
+            <div class="shortcut google" id="google">
+                <div class="box googleBoxCont" id="google"></div>
+                <div class="shortcut-circle" id="google-circle">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png"
+                        id="google-logo" alt="google logo">
+                </div>
+                <p>Google</p>
+            </div>
+            <div class="shortcut github" id="github">
+                <div class="box githubBoxCont" id="github"></div>
+                <div class="shortcut-circle" id="github-circle">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                        id="github-logo" alt="github logo">
+                </div>
+                <p>GitHub</p>
+            </div>
+            <div class="shortcut instagram" id="instagram">
+                <div class="box instagramBoxCont" id="instagram"></div>
+                <div class="shortcut-circle" id="instagram-circle">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                        id="instagram-logo" alt="instagram logo">
+                </div>
+                <p>Instagram</p>
+            </div>
+            <div class="shortcut paypal" id="paypal">
+                <div class="box paypalBoxCont" id="paypal-box"></div>
+                <div class="shortcut-circle" id="paypal-circle">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_1280.png" id="paypal-logo"
+                        alt="paypal logo">
+                </div>
+                <p>PayPal</p>
+            </div>
+            <div class="shortcut youtube" id="youtube">
+                <div class="box youtubeBoxCont" id="youtube"></div>
+                <div class="shortcut-circle" id="youtube-circle">
+                    <img src="https://img.freepik.com/premium-vector/red-youtube-logo-social-media-logo_197792-1803.jpg?w=2000"
+                        id="youtube-logo" alt="youtube logo">
+                </div>
+                <p>YouTube</p>
+            </div>
+            <div class="shortcut shortcutAdd" id="add-shortcut">
+                <div class="box shortcutAddBoxCont" id="add-shortcut"></div>
+                <div class="shortcut-circle" id="add-shortcut-circle">
+                    <div class="plus-line" id="linex"></div>
+                    <div class="plus-line" id="liney"></div>
+                </div>
+                <p>Add shortcut</p>
+            </div>
+        </div>
+    </div>
+    <div class="top-right-nav">
+        <div class="nav-selectors">
+            <p id="gmail">Gmail</p>
+            <p id="images">Images</p>
+            <div class="google-apps">
+                <div class="app-button-cont">
+                    <button class="app-button"></button>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="acc-btn-cont">
+                <p id="account-initial">T</p>
+            </div>
+        </div>
+        <div class="app-window hide">
+            <div class="app-content">
+                <div class="apps">
+                    <div class="app-logo" id="account-app">T</div>
+                    <h6 id="app-titles">Account</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
+                        alt="Google Logo">
+                    <h6>Search</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/714px-Google_Maps_icon_%282020%29.svg.png"
+                        alt="Google Maps Icon">
+                    <h6>Maps</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo" src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png"
+                        alt="Youtube Logo">
+                    <h6>YouTube</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo" src="https://cdn-icons-png.flaticon.com/512/732/732208.png" alt="Google Play">
+                    <h6>Play</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo" src="https://cdn-icons-png.flaticon.com/512/2702/2702605.png"
+                        alt="Google News">
+                    <h6>News</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png"
+                        alt="Google Mail Logo">
+                    <h6>Gmail</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Google_Meet_icon_%282020%29.svg/2491px-Google_Meet_icon_%282020%29.svg.png"
+                        alt="Google Meet">
+                    <h6>Meet</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Google_Chat_icon_%282020%29.svg/1964px-Google_Chat_icon_%282020%29.svg.png"
+                        alt="Google Chat">
+                    <h6>Chat</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/1024px-Google_Contacts_icon.svg.png"
+                        alt="Google Contacts">
+                    <h6>Contacts</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/2295px-Google_Drive_icon_%282020%29.svg.png"
+                        alt="Google Drive">
+                    <h6>Drive</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-03-512.png"
+                        alt="Google Calender">
+                    <h6>Calender</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png?20160129085523"
+                        alt="Google Translate">
+                    <h6>Translate</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_ads-512.png"
+                        alt="Google Add">
+                    <h6>Add</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo"
+                        src="https://seeklogo.com/images/M/my-ad-center-logo-61F796DAE6-seeklogo.com.png"
+                        alt="Google My Ad Center Logo">
+                    <h6>My Ad Center</h6>
+                </div>
+                <div class="apps">
+                    <img class="app-logo" src="https://cdn.worldvectorlogo.com/logos/google-shopping.svg"
+                        alt="Google Shopping Logo">
+                    <h6>Shopping</h6>
+                </div>
+                <div class="app-seperating-line"></div>
+            </div>
+        </div>
+        <div class="account-window hide">
+            <div class="email-account-container">
+                <div class="email-1">
+                    <button class="email-circle"> T</button>
+                    <button class="camera-circle"></button>
+                    <p id="email-name">the_bearded_dev</p>
+                    <p id="email-add">the_bearded_dev@email.com</p>
+                    <button class="manage-acc">Manage your Google Account</button>
+                </div>
+                <div class="email-seperator-line"> </div>
+                <div class="email-2">
+                    <button class="email-circle-2"> T</button>
+                    <p id="email-name-2">the_bearded_dev_2</p>
+                    <p id="email-add-2">the_bearded_dev_2@email.com</p>
+                </div>
+                <div class="add-acc-cont">
+                    <img class="add-acc-plus" src="" <i class="add-acc-icon"></i>
+                    <h3 class="acc-add">Add another account</h3>
+                </div>
+            </div>
+            <div class="sign-out-cont">
+                <i class="sign-out-icon"></i>
+                <h3 class="sign-out">Sign out of all accounts</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>
+</body>
+<script src="script.js"></script>
+
+</html>
